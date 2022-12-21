@@ -15,13 +15,17 @@
 .headerLogo{
     height:40px;
 }
-.headerLogoWrapper>span{
+.headerLogoWrapper>span> a{
+    color: white;
+    text-decoration: none;
     font-family: "poppins", sans-serif;
     font-size: 20px;
 }
+
 .headerNavList{
     display: flex;
     list-style-type: none;
+    margin: 0px;
     gap:60px;
 }
 
@@ -35,6 +39,7 @@
 }
 .linkss{
     display: flex;
+    align-items: center;
     gap :60px;
     margin-right: 70px;
 }
@@ -49,6 +54,5 @@
 }
 .button{
     display: flex;
-    height: inherit;
     align-items: center;
 }
