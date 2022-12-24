@@ -11,7 +11,7 @@ export default function Hero() {
     <Container>
 
         <Row>
-            <Col className="col1">
+            <Col className="m-auto">
                 <Row className="head1">NFA Based</Row>
                 <Row className='head1'>Authentication.</Row>
                 <Row className='head2'>Your best and secure sign in solution</Row>
