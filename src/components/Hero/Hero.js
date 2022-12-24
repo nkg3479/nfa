@@ -8,8 +8,7 @@ import Button from 'react-bootstrap/Button';
 
 export default function Hero() {
   return (
-    <Container>
-
+    <Container className='cont'>
         <Row>
             <Col className="m-auto">
                 <Row className="head1">NFA Based</Row>
