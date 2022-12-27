@@ -8,7 +8,7 @@ import './Features.css'
 
 export default function Features() {
   return (
-    <Container className="contain">
+    <Container className="cont">
       <Row className='page1'>
         <Col><img className="secondimg" src={lock}></img></Col>
         <Col className="d-flex align-items-end flex-column m-auto">
