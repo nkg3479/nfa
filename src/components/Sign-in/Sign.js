@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client';
 import Modal from 'react-modal';
 const customStyles = {
   overlay:{
@@ -25,9 +24,9 @@ export default function Sign(props) {
   let subtitle;
   const [modalIsOpen, setIsOpen] = React.useState(props.showPop);
   console.log(modalIsOpen)
-  function openModal() {
-    setIsOpen(true);
-  }
+  // function openModal() {
+  //   setIsOpen(true);
+  // }
 
   function afterOpenModal() {
     // references are now sync'd and can be accessed.
