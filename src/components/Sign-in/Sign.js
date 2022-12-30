@@ -40,15 +40,15 @@ export default function Sign({showPop,setPop}) {
       style={customStyles}
       contentLabel="Sign in"
     >
-      <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Hello</h2>
+      <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Sign Up</h2>
       <button onClick={closeModal}>close</button>
-      <div>I am a modal</div>
       <form>
-        <input />
-        <button>tab navigation</button>
-        <button>stays</button>
-        <button>inside</button>
-        <button>the modal</button>
+        <label for="uname">Username</label><br/>
+        <input type="text" name="uname" required/><br/>
+        <label for="pass" >Password</label><br/>
+        <input type="text" name='pass' required/><br/>
+        <label for="re_pass" >Re-enter Password</label><br/>
+        <input type="text" name="re_pass" required/><br/>
       </form>
     </Modal>
     </div>
