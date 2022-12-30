@@ -20,7 +20,7 @@ export default function Hero() {
             </Col>
             <Col><img src={home} alt="home logo"/></Col>
         </Row>
-        {pop && <Sign showPop={pop}/>}
+        {pop && <Sign showPop={pop} setPop={setPop}/>}
     </Container>
   )
 }

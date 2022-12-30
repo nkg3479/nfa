@@ -20,26 +20,21 @@ const customStyles = {
   },
 };
 Modal.setAppElement(document.getElementsByClassName('App'));
-export default function Sign(props) {
+export default function Sign({showPop,setPop}) {
   let subtitle;
-  const [modalIsOpen, setIsOpen] = React.useState(props.showPop);
-  console.log(modalIsOpen)
-  // function openModal() {
-  //   setIsOpen(true);
-  // }
+  console.log(showPop)
 
   function afterOpenModal() {
-    // references are now sync'd and can be accessed.
     subtitle.style.color = '#fff'; 
   }
 
   function closeModal() {
-    setIsOpen(false);
+    setPop(false);
   }
   return (
     <div>
     <Modal
-      isOpen={modalIsOpen}
+      isOpen={showPop}
       onAfterOpen={afterOpenModal}
       onRequestClose={closeModal}
       style={customStyles}
