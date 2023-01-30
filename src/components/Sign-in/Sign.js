@@ -53,9 +53,9 @@ export default function Sign({showPop,setPop}) {
         <label className='signt' for="uname">Username</label><br/>
         <input type="text" name="uname" required/><br/>
         <label className='signt' for="pass" >Password</label><br/>
-        <input type="text" name='pass' required/><br/>
+        <input type="password" name='pass' required/><br/>
         <label className='signt' for="re_pass" >Re-enter Password</label><br/>
-        <input type="text" name="re_pass" required/><br/>
+        <input type="password" name="re_pass" required/><br/>
       </form>
      
     </Modal>
