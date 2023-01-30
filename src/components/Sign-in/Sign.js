@@ -18,11 +18,13 @@ const customStyles = {
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
     width:'350px',
-    height:'550px',
+    height:'450px',
     border:'none',
     display:'flex',
     flexDirection:'column',
-    justifyContent:'space-around'
+    borderRadius:'15px',
+    paddingLeft:'35px',
+    paddingTop:'30px'
   },
 };
 Modal.setAppElement(document.getElementsByClassName('App'));
@@ -47,14 +49,15 @@ export default function Sign({showPop,setPop}) {
       contentLabel="Sign in"
     >
       <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Sign Up</h2>
-      <form className='mg-auto'>
-        <label for="uname">Username</label><br/>
+      <form className='signt'>
+        <label className='signt' for="uname">Username</label><br/>
         <input type="text" name="uname" required/><br/>
-        <label for="pass" >Password</label><br/>
+        <label className='signt' for="pass" >Password</label><br/>
         <input type="text" name='pass' required/><br/>
-        <label for="re_pass" >Re-enter Password</label><br/>
+        <label className='signt' for="re_pass" >Re-enter Password</label><br/>
         <input type="text" name="re_pass" required/><br/>
       </form>
+     
     </Modal>
     </div>
   )
