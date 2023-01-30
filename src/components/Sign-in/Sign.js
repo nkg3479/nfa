@@ -1,5 +1,6 @@
 import React from 'react'
 import Modal from 'react-modal';
+import '../Sign-in/sign.css'
 const customStyles = {
   overlay:{
     position: 'fixed',
@@ -12,11 +13,16 @@ const customStyles = {
     left: '50%',
     right: 'auto',
     color:"white",
-    backgroundColor:"#000",
+    backgroundColor:'rgb(38, 37, 37)',
     bottom: 'auto',
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
-    
+    width:'350px',
+    height:'550px',
+    border:'none',
+    display:'flex',
+    flexDirection:'column',
+    justifyContent:'space-around'
   },
 };
 Modal.setAppElement(document.getElementsByClassName('App'));
@@ -41,8 +47,7 @@ export default function Sign({showPop,setPop}) {
       contentLabel="Sign in"
     >
       <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Sign Up</h2>
-      <button onClick={closeModal}>close</button>
-      <form>
+      <form className='mg-auto'>
         <label for="uname">Username</label><br/>
         <input type="text" name="uname" required/><br/>
         <label for="pass" >Password</label><br/>
