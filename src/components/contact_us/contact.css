@@ -1,0 +1,41 @@
+div
+{
+    text-align: left;
+    align-items: left;
+    font-size: 15px;
+    margin: 10px;
+}
+.main-cont
+{
+    margin-top: 150px;
+    
+}
+h1{
+    margin: 10px;
+    font-size: 40px;
+}
+.sizing1
+{
+    color: rgb(255, 255, 255);
+    width: 350px;
+    background-color: rgb(38, 37, 37);
+    border: solid .5px rgb(38, 37, 37);
+}
+.sizing2
+{
+    resize:none;
+    overflow: auto;
+    color: rgb(255, 255, 255);
+    width: 350px;
+    background-color: rgb(38, 37, 37);
+    border: solid .5px rgb(38, 37, 37);
+}
+.sizing2::-webkit-scrollbar
+{
+    display: none;
+}
+.form-control:focus{
+    background-color: rgb(38, 37, 37);
+    border: solid .5px rgb(38, 37, 37);
+    color: rgb(255, 255, 255);
+}
