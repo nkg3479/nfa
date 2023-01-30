@@ -3,7 +3,10 @@ import './Header.css';
 import logo from '../../Assets/img/logo.png';
 import arrow from '../../Assets/img/arrow.png';
 import {Link} from "react-router-dom";
+import { useState } from 'react';
+
 function Header() {
+  const [pop,setPop]=useState(false);
   return (
     <header className='header'>
         <div className='headerLogoWrapper'>
@@ -26,7 +29,7 @@ function Header() {
             </li>
           </ul>
           <div className="button">
-            <button className='btt'>Sign up</button>
+          <button className='btt' href="#" onClick={()=>setPop(true)}>Sign up</button>
           </div>
         </div> 
     </header>
