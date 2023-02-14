@@ -26,6 +26,9 @@ export default function Contact() {
                     </div>
                   </form>
                 </Row>
+                <Row>
+                <button className="button2" type="submit" name ="Submit">Send</button>
+                </Row>
           </Col>
           <Col className="d-flex align-items-end flex-column m-auto">
               <img src={email} alt="email"/>
