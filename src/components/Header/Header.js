@@ -4,7 +4,7 @@ import logo from '../../Assets/img/logo.png';
 import arrow from '../../Assets/img/arrow.png';
 import {Link} from "react-router-dom";
 import { useState } from 'react';
-
+import Sign from '../Sign-in/Sign';
 function Header() {
   const [pop,setPop]=useState(false);
   return (
@@ -31,6 +31,7 @@ function Header() {
           <div className="button">
           <button className='btt' href="#" onClick={()=>setPop(true)}>Sign up</button>
           </div>
+          {pop && <Sign showPop={pop} setPop={setPop}/>}
         </div> 
     </header>
   )
