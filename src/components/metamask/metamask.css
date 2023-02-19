@@ -1,0 +1,19 @@
+.bod{
+    margin-top: 300px;
+    margin-left:100;
+}
+
+.bt1{
+    background-color: #8A88F2;
+    border-color: #8A88F2;
+}
+.hd1{
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.met{
+    margin: auto;
+    margin-left: 300px;
+}

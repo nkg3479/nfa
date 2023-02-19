@@ -25,7 +25,7 @@ function Header() {
             </li>
             <li>
               <img src={arrow} alt="not available"></img>
-              <Link to="About">About</Link>
+              <Link to="Connect">Connect</Link>
             </li>
           </ul>
           <div className="button">
