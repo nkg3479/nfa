@@ -1,6 +1,6 @@
 import React from 'react'
 import Modal from 'react-modal';
-import '../Sign-in/sign.css'
+import './sign.css'
 const customStyles = {
   overlay:{
     position: 'fixed',
@@ -28,14 +28,14 @@ const customStyles = {
   },
 };
 Modal.setAppElement(document.getElementsByClassName('App'));
-export default function Sign({showPop,setPop}) {
+export default function Sign({showPop,setPop,setLogin,login}) {
   let subtitle;
   console.log(showPop)
 
   function afterOpenModal() {
     subtitle.style.color = '#fff'; 
   }
-
+ let ref = React.useRef(null);
   function closeModal() {
     setPop(false);
   }
@@ -48,16 +48,16 @@ export default function Sign({showPop,setPop}) {
       style={customStyles}
       contentLabel="Sign in"
     >
-      <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Sign Up</h2>
-      <form className='signt'>
-        <label className='signt' for="uname">Username</label><br/>
+      <h2>Sign Up</h2>
+      <form className='signt1'>
+        <label className='signt1' for="uname">Username</label><br/>
         <input type="text" name="uname" required/><br/>
-        <label className='signt' for="pass" >Password</label><br/>
+        <label className='signt1' for="pass" >Password</label><br/>
         <input type="password" name='pass' required/><br/>
-        <label className='signt' for="re_pass" >Re-enter Password</label><br/>
+        <label className='signt1' for="re_pass" >Re-enter Password</label><br/>
         <input type="password" name="re_pass" required/><br/>
         <button className="button1" type="submit" name ="Submit">sign up</button>
-        <p className='text'>Already a user?<a href='#'>Login</a></p>
+        <p className='text1'>Already a user?<span onClick={()=>{setLogin(!login)}}>Login</span></p>
       </form>
      
     </Modal>

@@ -1,4 +1,4 @@
-.signt
+.signt1
 {
   padding-top: 10px;
   padding-bottom: 5px;
@@ -35,16 +35,8 @@ input:focus
   margin-top: 25px;
 }
 
-.text{
+.text1{
   margin-top: 25px;
  margin-left: 45px;
  font-weight: 500;
-}
-
-a{
-  color: white;
-}
-
-a:hover{
-  color: #8A88F2;
 }

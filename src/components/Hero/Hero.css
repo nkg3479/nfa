@@ -11,10 +11,12 @@
     font-size: 24px;
 }
 .but{
+    text-align: center;
     margin-top: 50px;
     width:120px;
+    height: 43px;
     font-size: 18px;
     font-weight: 500;
     background-color: #8A88F2;
-    border-radius: 20px;
+    border-radius: 5px;
 }
