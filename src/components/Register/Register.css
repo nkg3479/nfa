@@ -1,9 +1,9 @@
 .button5{
   
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 2.5px;
-    padding-bottom: 2.5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
      height: 45px;
      width: 140px;
      border: #8A88F2;
@@ -13,6 +13,10 @@
      font-weight:400;
      font-size:larger;
      display: block;
-     margin-left: 45px;
+     margin-left: 105px;
      margin-top: 25px;
+   }
+   .text
+   {
+    margin-left: 70px;
    }

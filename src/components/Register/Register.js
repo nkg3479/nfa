@@ -11,18 +11,21 @@ export default function Register() {
       <Row className='main-cont'>
           <Col className="d-flex align-items-begining flex-column m-auto">
                 <Row>
-                    <h1>Register</h1>
+                    <h1>REGISTER</h1>
                 </Row>
                 <Row>
                   <form className='form-val'>
                     <div className="form-group mb-4">
-                      <label className='mb-3'>Email</label>
-                      <input type="email" className="form-control sizing1" placeholder="someone@gmail.com"/>
+                      <label className='mb-3'>USER NAME</label>
+                      <input type="email" className="form-control sizing1" placeholder="Name"/>
                     </div>
                   </form>
                 </Row>
                 <Row>
-                <button className="button5" type="submit" name ="Submit"><img src={vector} alt="vector" className='p-2'/>Send</button>
+                <button className="button5" type="submit" name ="Submit"><img src={vector} alt="vector" className='p-2'/>Sign Up</button>
+                </Row>
+                <Row className='text'> 
+                <p>Already a user?Login here</p>
                 </Row>
           </Col>
           <Col className="d-flex align-items-end flex-column m-auto">
