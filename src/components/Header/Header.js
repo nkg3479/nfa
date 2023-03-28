@@ -17,6 +17,10 @@ function Header() {
         </div>
         <div className='linkss'>
           <ul className="headerNavList">
+          <li>
+              <img src={arrow} alt="not available"></img>
+              <Link to="Hero">Home</Link>
+            </li>
             <li>
               <img src={arrow} alt="not available"></img>
               <Link to="Features">Features</Link>

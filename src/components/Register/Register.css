@@ -1,0 +1,18 @@
+.button5{
+  
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+     height: 45px;
+     width: 140px;
+     border: #8A88F2;
+     border-radius: 10px;
+     background-color: #8A88F2;
+     color: white;
+     font-weight:400;
+     font-size:larger;
+     display: block;
+     margin-left: 45px;
+     margin-top: 25px;
+   }
