@@ -22,9 +22,10 @@ function App() {
     <Web3ReactProvider getLibrary={getLibrary}>
     <div className="App">
       <Router>
-      <Header/>
+        <Register/>
+      {/* <Header/> */}
           <Routes>
-          <Route exact path="/" element={<Register/>}></Route>
+          {/* <Route exact path="/" element={<Register/>}></Route> */}
             <Route exact path="Hero" element={<Hero/>}></Route>
             <Route exact path="About" element={<About/>}></Route>
             <Route exact path="Features" element={<Features/>}></Route>

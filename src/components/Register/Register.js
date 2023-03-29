@@ -1,38 +1,74 @@
 import React from 'react'
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import register from '../../Assets/img/register.png'
-import vector from '../../Assets/img/Vector 2.png'
-import './Register.css'
+import './Register.css';
+import { useState } from "react";
+
+
 export default function Register() {
+  const [swapPanel, setSwapPanel] = useState(false);
+
+  const signUpButton = () => {
+    setSwapPanel(true);
+  };
+  const signInButton = () => {
+    setSwapPanel(false);
+  };
+
   return (
-    <Container>
-      <Row className='main-cont'>
-          <Col className="d-flex align-items-begining flex-column m-auto">
-                <Row>
-                    <h1>REGISTER</h1>
-                </Row>
-                <Row>
-                  <form className='form-val'>
-                    <div className="form-group mb-4">
-                      <label className='mb-3'>USER NAME</label>
-                      <input type="email" className="form-control sizing1" placeholder="Name"/>
-                    </div>
-                  </form>
-                </Row>
-                <Row>
-                <button className="button5" type="submit" name ="Submit"><img src={vector} alt="vector" className='p-2'/>Sign Up</button>
-                </Row>
-                <Row className='text'> 
-                <p>Already a user?Login here</p>
-                </Row>
-          </Col>
-          <Col className="d-flex align-items-end flex-column m-auto">
-              <img src={register} alt="register image"/>
-          </Col>
-      </Row>
-    </Container>
-   
-  )
-}
+    <div className="sigin">
+      <div
+        className={["container", swapPanel ? "right-panel-active" : null]
+          .filter(Boolean)
+          .join(" ")}
+        id="container"
+      >
+        <div className="form-container sign-up-container">
+          <form action="#">
+            <h1>Create Account</h1>
+            <div className="social-container"></div>
+            
+            <input type="text" placeholder="Username" />
+            <button onClick={signUpButton}>Sign Up</button>
+          </form>
+        </div>
+        <div className="form-container sign-in-container">
+          <form action="#">
+            <h1>Sign in</h1>
+            <div className="social-container"></div>
+            <button onClick={signInButton}>Sign In</button>
+          </form>
+        </div>
+        <div className="overlay-container">
+          <div className="overlay">
+            <div className="overlay-panel overlay-left">
+              <h1>Welcome Back!</h1>
+              <p>
+                Sign in with just a tap of a button.
+              </p>
+              <button
+                type="button"
+                onClick={signInButton}
+                className="ghost"
+                id="signIn"
+              >
+                Sign In
+              </button>
+            </div>
+            <div className="overlay-panel overlay-right">
+              <h1>Hello, Friend!</h1>
+              <p>Enter a unique username and start journey with us</p>
+              <button
+                type="button"
+                onClick={signUpButton}
+                className="ghost"
+                id="signUp"
+              >
+                Sign Up
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
