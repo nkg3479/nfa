@@ -11,6 +11,7 @@ body {
 	flex-direction: column;
 	font-family: 'Montserrat', sans-serif;
   height: 100vh;
+  overflow: hidden;
  
 }
 
@@ -163,6 +164,8 @@ input {
 	width: 200%;
   	transform: translateX(0);
 	transition: transform 0.6s ease-in-out;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .container.right-panel-active .overlay {
