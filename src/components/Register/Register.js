@@ -1,74 +1,40 @@
-import React from 'react'
+
+import React from 'react';
+import {useNavigate} from "react-router-dom"
 import Container from 'react-bootstrap/Container';
 import './Register.css';
 import { useState } from "react";
+import vector1 from '..//..//Assets/img/Vector 1.png'
+function signUpButton()
+{
 
-
+}
+function signInButton()
+{
+  
+}
 export default function Register() {
-  const [swapPanel, setSwapPanel] = useState(false);
-
-  const signUpButton = () => {
-    setSwapPanel(true);
-  };
-  const signInButton = () => {
-    setSwapPanel(false);
-  };
-
+  const navigate = useNavigate();
   return (
-    <div className="sigin">
-      <div
-        className={["container", swapPanel ? "right-panel-active" : null]
-          .filter(Boolean)
-          .join(" ")}
-        id="container"
-      >
-        <div className="form-container sign-up-container">
-          <form action="#">
-            <h1>Create Account</h1>
-            <div className="social-container"></div>
-            
-            <input type="text" placeholder="Username" />
-            <button onClick={signUpButton}>Sign Up</button>
-          </form>
-        </div>
-        <div className="form-container sign-in-container">
-          <form action="#">
-            <h1>Sign in</h1>
-            <div className="social-container"></div>
-            <button onClick={signInButton}>Sign In</button>
-          </form>
-        </div>
-        <div className="overlay-container">
-          <div className="overlay">
-            <div className="overlay-panel overlay-left">
-              <h1>Welcome Back!</h1>
-              <p>
-                Sign in with just a tap of a button.
-              </p>
-              <button
-                type="button"
-                onClick={signInButton}
-                className="ghost"
-                id="signIn"
-              >
-                Sign In
-              </button>
-            </div>
-            <div className="overlay-panel overlay-right">
-              <h1>Hello, Friend!</h1>
-              <p>Enter a unique username and start journey with us</p>
-              <button
-                type="button"
-                onClick={signUpButton}
-                className="ghost"
-                id="signUp"
-              >
-                Sign Up
-              </button>
-            </div>
-          </div>
-        </div>
+   
+  <div className='body-img'>
+    <div className='txt'><img className='topimg'  src={vector1} alt="icon1"/>NFA</div>
+    <div className='main-body'> 
+      <div>
+        <h2 className='text-center pb-1'>Sign Up</h2>
+        <p className='shade'>create an account to continue</p>
       </div>
+      <div>
+            <form className='form-val'>
+                    <div className="form-group mb-3">
+                      <label className='h5 mb-3'>Username</label>
+                      <input type="text" className="form-control sizing1 input-box" placeholder="Enter Username here"/>
+                    </div>
+                    <button className="signUp" type="submit" name ="Submit" onClick={()=>navigate("/Contact")}><img src={vector1} alt="icon1"/><span className='pl-3'>Sign up</span></button>
+             </form>
+      </div>
+      <p className='shade'>Already have an account?<a href="/Hero"className='opacity-100 text-primary'>Sign in</a></p>
+    </div>
     </div>
   );
 };

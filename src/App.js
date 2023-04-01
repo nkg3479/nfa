@@ -23,7 +23,6 @@ function App() {
     <div className="App">
       <Router>
         <Register/>
-      {/* <Header/> */}
           <Routes>
           {/* <Route exact path="/" element={<Register/>}></Route> */}
             <Route exact path="Hero" element={<Hero/>}></Route>
