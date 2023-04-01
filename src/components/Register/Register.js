@@ -17,7 +17,7 @@ export default function Register() {
   const navigate = useNavigate();
   return (
    
-  <div className='body-img'>
+  <div id='body-img'>
     <div className='txt'><img className='topimg'  src={vector1} alt="icon1"/>NFA</div>
     <div className='main-body'> 
       <div>
