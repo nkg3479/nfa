@@ -5,6 +5,7 @@ import Container from 'react-bootstrap/Container';
 import './Register.css';
 import { useState } from "react";
 import vector1 from '..//..//Assets/img/Vector 1.png'
+import {Link} from "react-router-dom";
 function signUpButton()
 {
 
@@ -18,7 +19,7 @@ export default function Register() {
   return (
    
   <div className='body-img'>
-    <div className='txt'><img className='topimg'  src={vector1} alt="icon1"/>NFA</div>
+    <div className='txt' style={{color:'black', fontWeight:'bold'}}><img className='topimg'  src={vector1} alt="icon1"/>NFA</div>
     <div className='main-body'> 
       <div>
         <h2 className='text-center pb-1'>Sign Up</h2>
@@ -30,10 +31,10 @@ export default function Register() {
                       <label className='h5 mb-3'>Username</label>
                       <input type="text" className="form-control sizing1 input-box" placeholder="Enter Username here"/>
                     </div>
-                    <button className="signUp" type="submit" name ="Submit" onClick={()=>navigate("/Contact")}><img src={vector1} alt="icon1"/><span className='pl-3'>Sign up</span></button>
+                    <button className="signUp" type="submit" name ="Submit" onClick={()=>navigate("Support")}><img src={vector1} alt="icon1"/><span className='pl-3'>Sign up</span></button>
              </form>
       </div>
-      <p className='shade'>Already have an account?<a href="/Hero"className='opacity-100 text-primary'>Sign in</a></p>
+      <p className='shade'>Already have an account?<Link to="Hero">Sign In</Link></p>
     </div>
     </div>
   );
