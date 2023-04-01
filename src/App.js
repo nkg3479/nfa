@@ -21,6 +21,7 @@ function App() {
   return (
     <Web3ReactProvider getLibrary={getLibrary}>
     <div className="App">
+      
       <Router>
         <Register/>
           <Routes>

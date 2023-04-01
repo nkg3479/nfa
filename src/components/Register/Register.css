@@ -1,16 +1,19 @@
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
-html,body{
-	
-	margin: 0;
-	padding: 0;
-}
+
 .body-img{
     width: 100vw;
     height: 100vh;
 	background: url('../../Assets/img/background.jpeg');
 	background-repeat: no-repeat;
 	background-size: cover;
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin: 0;
+	
+	
+	
 }
 .main-body
 {
@@ -20,12 +23,14 @@ html,body{
 	align-items: center;
 	justify-content: center;
 	color: black;
-	margin: auto;
 	height: 450px;
 	width: 450px;
 	padding: 10px;
-	margin-top: 130px;
 	border-radius: 20px;
+	position: absolute;
+	top: 50% ;
+    left: 50% ;
+    transform: translate(-50% , -50% );
 }
 .topimg
 {
