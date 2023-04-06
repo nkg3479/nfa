@@ -19,7 +19,7 @@ export default function Register() {
   return (
    
   <div className='body-img'>
-    <div className='txt' style={{color:'black', fontWeight:'bold'}}><img className='topimg'  src={vector1} alt="icon1"/>NFA</div>
+    <div className='txt' style={{color:'white', fontWeight:'bold'}}><img className='topimg'  src={vector1} alt="icon1"/>NFA</div>
     <div className='main-body'> 
       <div>
         <h2 className='text-center pb-1'>Sign Up</h2>
