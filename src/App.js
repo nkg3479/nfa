@@ -2,7 +2,7 @@
 import Header from './components/Header/Header';
 import './App.css';
 import Hero from './components/Hero/Hero';
-import {BrowserRouter as Router,Route,Routes} from "react-router-dom";
+import {BrowserRouter as HashRouter,NavLink,Router,Route,Routes} from "react-router-dom";
 import About from './components/About/About';
 import Features from './components/Features/Features';
 import Register from './components/Register/Register';
@@ -19,6 +19,7 @@ function getLibrary(provider)
 
 function App() {
   return (
+    <HashRouter>
     <Web3ReactProvider getLibrary={getLibrary}>
     <div className="App">
       
@@ -35,6 +36,7 @@ function App() {
       </Router>
     </div>
     </Web3ReactProvider>
+    </HashRouter>
   );
 }
 
