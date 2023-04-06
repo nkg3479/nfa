@@ -3,9 +3,7 @@ import './Header.css';
 import logo from '../../Assets/img/logo.png';
 import arrow from '../../Assets/img/arrow.png';
 import {Link} from "react-router-dom";
-import { useState } from 'react';
-import Sign from '../Sign-in/Sign';
-import Login from "../Login/login"
+
 function Header() {
   // const [pop,setPop]=useState(false);
   // const [login,setLogin]=useState(true);
