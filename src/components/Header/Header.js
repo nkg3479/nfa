@@ -33,7 +33,7 @@ function Header() {
             </li>
           </ul>
           <div className="button">
-          <button className='btt' href="#" /*onClick={()=>setPop(true)}*/>Sign up</button>
+          <button className='btt' href="#" /*onClick={()=>setPop(true)}*/>Log out</button>
           </div>
           
         </div> 

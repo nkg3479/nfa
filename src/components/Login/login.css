@@ -64,3 +64,9 @@
 	 margin-bottom: 30px;
 }
 input.input-box, textarea { background: rgb(255, 255, 255); }
+select{
+	height: 50px;
+	width: 80%;
+	border-radius: 10px;
+	border:  1px solid grey;
+}

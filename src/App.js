@@ -10,7 +10,7 @@ import Contact from './components/contact_us/Contact';
 import { Web3ReactProvider } from '@web3-react/core';
 import Web3 from 'web3';
 import Meta from './components/metamask/metamask';
-import Login from './components/Login/Login';
+import Login from './components/Login/login';
 
 function getLibrary(provider)
 {

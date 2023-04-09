@@ -4,14 +4,14 @@ import {useNavigate} from "react-router-dom"
 import './Register.css';
 import vector1 from '..//..//Assets/img/Vector 1.png'
 import {Link} from "react-router-dom";
-function signUpButton()
-{
+// function signUpButton()
+// {
 
-}
-function signInButton()
-{
+// }
+// function signInButton()
+// {
   
-}
+// }
 export default function Register() {
   const navigate = useNavigate();
   return (
