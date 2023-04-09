@@ -1,9 +1,7 @@
 
 import React from 'react';
 import {useNavigate} from "react-router-dom"
-import Container from 'react-bootstrap/Container';
 import './Register.css';
-import { useState } from "react";
 import vector1 from '..//..//Assets/img/Vector 1.png'
 import {Link} from "react-router-dom";
 function signUpButton()
@@ -34,7 +32,7 @@ export default function Register() {
                     <button className="signUp" type="submit" name ="Submit" onClick={()=>navigate("Hero")}><img src={vector1} alt="icon1"/><span className='pl-3'>Sign up</span></button>
              </form>
       </div>
-      <p className='shade'>Already have an account?<Link to="#">Sign In</Link></p>
+      <p className='shade'>Already have an account?<Link to="Login">Sign In</Link></p>
     </div>
     </div>
   );

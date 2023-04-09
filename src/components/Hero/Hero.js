@@ -5,9 +5,6 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-import Sign from '../Sign-in/Sign';
-import Login from "../Login/login"
-import { useState } from 'react';
 export default function Hero() {
   // const [pop,setPop]=useState(false);
   // const [login,setLogin]=useState(true);

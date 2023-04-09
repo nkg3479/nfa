@@ -1,64 +1,39 @@
-import React from 'react'
-import Modal from 'react-modal';
-import './login.css'
 
-const customStyles = {
-  overlay:{
-    position: 'fixed',
-    backgroundColor:'rgba(0,0,0,0.5)',
-    backdropFilter: 'blur(8px)'
-  },
-  content: {
-    position:'absolute',
-    top: '50%',
-    left: '50%',
-    right: 'auto',
-    color:"white",
-    backgroundColor:'rgb(38, 37, 37)',
-    bottom: 'auto',
-    marginRight: '-50%',
-    transform: 'translate(-50%, -50%)',
-    width:'350px',
-    height:'480px',
-    border:'none',
-    display:'flex',
-    flexDirection:'column',
-    borderRadius:'15px',
-    paddingLeft:'50px',
-    paddingTop:'30px'
-  },
-};
+import React from 'react';
+import {useNavigate} from "react-router-dom"
+import './Login.css';
+import vector1 from '..//..//Assets/img/Vector 1.png'
+import {Link} from "react-router-dom";
+function signUpButton()
+{
 
-Modal.setAppElement(document.getElementsByClassName('App'));
-
-export default function Index({showPop,setPop,login}) {
-    const [data,setData]=React.useState({
-        email:'',
-        password:''
-    })
-    function handelSubmmit(e) {
-        e.preventDefault()
-        console.log(data)
-    }
-  return (
-    <div>
-    <Modal
-      isOpen={showPop}
-      onRequestClose={()=>(setPop(false))}
-      style={customStyles}
-      contentLabel="Login"
-    >
-      <h2 >Login IN</h2>
-      <form className='signt' onSubmit={handelSubmmit}>
-        <label className='signt' for="uname">Username</label><br/>
-        <input type="text" name="uname" required onChange={(e)=>{setData({...data,email:e.target.value})}}/><br/>
-        <label className='signt' for="pass" >Password</label><br/>
-        <input type="password" name='pass' required onChange={(e)=>{setData({...data,password:e.target.value})}}/><br/>
-        <button className="button1" type="submit" name ="Submit">Login</button>
-        <p className='text'>Don't have an account? <span onClick={()=>{setPop(false)}}>Sign Up</span></p>
-      </form>
-     
-    </Modal>
-    </div>
-  )
 }
+function signInButton()
+{
+  
+}
+export default function Login() {
+  const navigate = useNavigate();
+  return (
+   
+  <div className='body-img'>
+    <div className='txt' style={{color:'white', fontWeight:'bold'}}><img className='topimg'  src={vector1} alt="icon1"/>NFA</div>
+    <div className='main-body'> 
+      <div>
+        <h2 className='text-center pb-1'>Login</h2>
+        <p className='shade'>choose an account to start with</p>
+      </div>
+      <div>
+            <form className='form-val'>
+                    <div className="form-group mb-3">
+                      <label className='h5 mb-3'>Username</label>
+                      <input type="text" className="form-control sizing1 input-box" placeholder="Enter Username here"/>
+                    </div>
+                    <button className="signUp" type="submit" name ="Submit" onClick={()=>navigate("Hero")}><img src={vector1} alt="icon1"/><span className='pl-3'>Login</span></button>
+             </form>
+      </div>
+      <p className='shade'>Already have an account?<Link to="#">Sign In</Link></p>
+    </div>
+    </div>
+  );
+};

@@ -10,6 +10,7 @@ import Contact from './components/contact_us/Contact';
 import { Web3ReactProvider } from '@web3-react/core';
 import Web3 from 'web3';
 import Meta from './components/metamask/metamask';
+import Login from './components/Login/Login';
 
 function getLibrary(provider)
 {
@@ -26,6 +27,7 @@ function App() {
         <Header />
           <Routes>
             <Route exact path="/" element={<Register/>}></Route>
+            <Route exact path="Login" element={<Login/>}></Route>
             <Route exact path="Hero" element={<Hero/>}></Route>
             <Route exact path="About" element={<About/>}></Route>
             <Route exact path="Features" element={<Features/>}></Route>
