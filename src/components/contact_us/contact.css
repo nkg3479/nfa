@@ -3,12 +3,12 @@ div
     text-align: left;
     align-items: left;
     font-size: 15px;
-    margin: 10px;
+    margin: 5px;
 }
 .main-cont
 {
-    margin-top: 150px;
-    
+    margin-top: 120px;
+    margin-left: 10px;
 }
 h1{
     margin: 10px;
