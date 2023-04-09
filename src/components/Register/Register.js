@@ -31,10 +31,10 @@ export default function Register() {
                       <label className='h5 mb-3'>Username</label>
                       <input type="text" className="form-control sizing1 input-box" placeholder="Enter Username here"/>
                     </div>
-                    <button className="signUp" type="submit" name ="Submit" onClick={()=>navigate("Support")}><img src={vector1} alt="icon1"/><span className='pl-3'>Sign up</span></button>
+                    <button className="signUp" type="submit" name ="Submit" onClick={()=>navigate("Hero")}><img src={vector1} alt="icon1"/><span className='pl-3'>Sign up</span></button>
              </form>
       </div>
-      <p className='shade'>Already have an account?<Link to="Hero">Sign In</Link></p>
+      <p className='shade'>Already have an account?<Link to="#">Sign In</Link></p>
     </div>
     </div>
   );
