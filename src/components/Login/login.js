@@ -29,9 +29,8 @@ export default function Login() {
           <form className="form-val">
             <div className="form-group mb-3">
               <label className="h5  ml-3 mb-3">Username</label>
-              {/* <input type="text" className="form-control sizing1 input-box" placeholder="Enter Username here"/> */}
               <br />
-              <div>
+              
                 <select className="ml-3" aria-label="Default select example">
                   <option>Select one</option>
                   <option value="1">One</option>
@@ -39,20 +38,18 @@ export default function Login() {
                   <option value="3">Three</option>
                 </select>
               </div>
-            </div>
             <button
               className="signUp"
               type="submit"
               name="Submit"
-              onClick={() => navigate("Hero")}
-            >
+              onClick={() => navigate("/Hero")}>
               <img src={vector1} alt="icon1" />
               <span className="pl-3">Login</span>
             </button>
           </form>
         </div>
         <p className="shade">
-          Already have an account?<Link to="#">Sign In</Link>
+          Don't have an account?<Link to="/">Sign Up</Link>
         </p>
       </div>
     </div>

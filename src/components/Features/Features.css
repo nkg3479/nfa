@@ -1,13 +1,14 @@
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 .heading{
-   font-size: 70px;
-   font-weight: 600;
+   font-size: 80px;
+   font-weight: 700;
    line-height: 1;
    margin-bottom: 68px;
 }
 .line
 {
-    letter-spacing: 2.5px;
+  
+    font-size: 24px;
 }
 .page1
 {
