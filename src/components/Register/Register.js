@@ -1,9 +1,8 @@
-import React, { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
-import "./Register.css";
+import React from "react";
+import { Link, useNavigate } from "react-router-dom";
 import vector1 from "..//..//Assets/img/Vector 1.png";
-import { Link } from "react-router-dom";
-import { getNfts } from "../graph/graph";
+
+import "./Register.css";
 //import data from "../graph/graph";
 
 // function signUpButton()
@@ -15,8 +14,9 @@ import { getNfts } from "../graph/graph";
 
 // }
 export default function Register() {
+
   const navigate = useNavigate();
-  getNfts();
+
   return (
     <div className="body-img">
       <div className="txt" style={{ color: "white", fontWeight: "bold" }}>

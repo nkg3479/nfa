@@ -1,4 +1,4 @@
- export function getNfts(){
+ export function getNfts(props){
 fetch('https://api.thegraph.com/subgraphs/name/anoop072001/nfa',{
   method:"POST",
   headers:
@@ -7,9 +7,9 @@ fetch('https://api.thegraph.com/subgraphs/name/anoop072001/nfa',{
   },
   body:JSON.stringify({
     query:`
-    query
+    query getOwner($owner:String)
     {
-      tokens(first: 5) {
+      tokens(first: 5 where: {owner: $owner}}) {
         tokenId
         nft {
           id
