@@ -18,7 +18,7 @@ export default function Hero() {
                 <Row className="head1">NFA Based</Row>
                 <Row className='head1'>Authentication.</Row>
                 <Row className='head2'>Your best and secure sign in solution</Row>
-                <Row ><Button className='but' href="#" onClick={()=>Block()}>Get Started</Button></Row>
+                <Row ><Button className='but' href="#" /*onClick={()=>Block()}*/>Get Started</Button></Row>
                 
             </Col>
             <Col className='m-right'><img src={home} alt="home logo"/></Col>

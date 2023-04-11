@@ -16,13 +16,13 @@ import { Block } from "../block/Block";
 
 export default function Login() {
   const navigate = useNavigate();
-  
-  useEffect(() => {
-    const address =  Block();
-    if(address!==undefined){
-    getNfts(address);
-    }
-  }, []);
+
+  // useEffect(() => {
+   // const address = Block();
+  //   if(address!==undefined){
+  //   getNfts(address);
+  //   }
+  // }, []);
   return (
     <div className="body-img">
       <div className="txt" style={{ color: "white", fontWeight: "bold" }}>
