@@ -1,7 +1,6 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import vector1 from "..//..//Assets/img/Vector 1.png";
-import {Block} from '../block/Block';
 
 import "./Register.css";
 //import data from "../graph/graph";
@@ -15,7 +14,6 @@ import "./Register.css";
 
 // }
 export default function Register() {
-
   const navigate = useNavigate();
 
   return (
@@ -51,7 +49,7 @@ export default function Register() {
           </form>
         </div>
         <p className="shade">
-          Already have an account?<Link onClick={()=>{Block()}} to="Login">Sign In</Link>
+          Already have an account?<Link to="Login">Sign In</Link>
         </p>
       </div>
     </div>
