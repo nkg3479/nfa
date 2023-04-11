@@ -252,8 +252,8 @@ export const Block = async () => {
     if (signerAddr !== address) {
       return false;
     }
-	console.log(signerAddr.toLowerCase());
-    return signerAddr.toLowerCase();
+	console.log(signerAddr);
+    return signerAddr;
   } catch (err) {
 	console.log(err);
   }
