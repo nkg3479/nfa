@@ -63,4 +63,4 @@
      margin-top: 60px;
 	 margin-bottom: 30px;
 }
-input.input-box, textarea { background: rgb(255, 255, 255); }
+input.input-box, textarea {color: black; background: rgb(255, 255, 255); }

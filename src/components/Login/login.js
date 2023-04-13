@@ -18,7 +18,7 @@ export default function Login() {
   const [nft, setNft] = useState();
 
   useEffect(() => {
-    Block().then((data) => {
+    Block(2).then((data) => {
       setNft(data);
     });
   }, []);
