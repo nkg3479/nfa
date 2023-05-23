@@ -4,14 +4,6 @@ import "./login.css";
 import vector1 from "..//..//Assets/img/Vector 1.png";
 import { Link } from "react-router-dom";
 import { Block } from "../block/Block";
-// function signUpButton()
-// {
-
-// }
-// function signInButton()
-// {
-
-// }
 
 export default function Login() {
   const navigate = useNavigate();
