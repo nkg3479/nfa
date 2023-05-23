@@ -4,15 +4,10 @@ const Web3 = require("web3");
 const { utils } = require("ethers");
 export const smartcall = async (props) => {
   try {
-    // Set up the web3 provider with the Mumbai testnet node endpoint
-    //console.log(utils.formatBytes32String(props));
-    //console.log(props);
     const provider = new Web3.providers.HttpProvider(
       "https://rpc-mumbai.maticvigil.com"
     );
     const web3 = new Web3(provider);
-
-    // Set up the contract instance with the contract address and ABI
     const contractAddress = "0x2299D8F44B664fE07a5e95C222B340DC5BFC1c34";
     const contractAbi = [
       {
@@ -365,35 +360,30 @@ export const smartcall = async (props) => {
         stateMutability: "view",
         type: "function",
       },
-    ]; // ABI of your smart contract
+    ];
     const contract = new web3.eth.Contract(contractAbi, contractAddress);
 
-    // Set up the account address and private key
     const accountAddress = "0xa288AE52Fa91caC98f8b354863A1Bd1Fb0c21380";
     const privateKey =
       "242868588d257bca00db6530d7f6834b50146d27565bdc5e11ad8c6784f5063b";
 
-    // Prepare the parameters for the safeMint function
     const toAddress = await Block(1);
     console.log(toAddress);
     const tokenId = await utils.formatBytes32String(props);
 
-    // Build the transaction object for the safeMint function
     const txObject = contract.methods.safeMint(toAddress, tokenId);
 
-    // Sign the transaction with the account's private key
     const signedTx = await web3.eth.accounts.signTransaction(
       {
         to: contractAddress,
         data: txObject.encodeABI(),
-        gas: 1000000, // gas limit for the transaction
-        gasPrice: "10000000000", // gas price in wei
+        gas: 1000000,
+        gasPrice: "10000000000",
         nonce: await web3.eth.getTransactionCount(accountAddress),
       },
       privateKey
     );
 
-    // Send the signed transaction to the Mumbai testnet
     const txReceipt = await web3.eth.sendSignedTransaction(
       signedTx.rawTransaction
     );
@@ -403,7 +393,7 @@ export const smartcall = async (props) => {
     console.log("finished");
     return 1;
   } catch (err) {
-    console.log(err);
+    console.log("User already Minted");
     return 0;
   }
 };

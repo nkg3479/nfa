@@ -16,7 +16,6 @@ async function signUpButton(props) {
 export default function Register() {
   const navigate = useNavigate();
   const [tokenId, setTokenId] = useState();
-  const [a, seta] = useState();
   return (
     <div className="body-img">
       <div className="txt" style={{ color: "white", fontWeight: "bold" }}>
@@ -53,7 +52,7 @@ export default function Register() {
                 if (ifcase === 1) {
                   navigate("/Hero");
                 } else {
-                  alert("Error");
+                  alert("Username already exists");
                 }
               }}
             >
