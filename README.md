@@ -1,4 +1,4 @@
-#NFA
+# NFA
 🔐 Exciting News! Introducing our groundbreaking project - NFT-based Authentication (NFA) - a game-changer in the world of secure login systems! 🌟
 I'm thrilled to share that our incredible team, consisting of Anjali ., ATHUL KRISHNA, and Neeraj K G , under the exceptional guidance of Akhil P Raj, has successfully developed an innovative solution that eliminates the need for passwords and usernames during the authentication process. 🚀
 How does it work, you ask? Let me break it down for you. During the sign-up process, all users need to provide is a username of their choice. This username is then converted into a byte32, which becomes their unique NFT token ID. No more worrying about remembering complex passwords or coming up with yet another username! 🎉
